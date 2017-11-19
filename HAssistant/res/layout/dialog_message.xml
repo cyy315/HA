@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_title"
+        android:gravity="center"
+        android:text="@string/title_message"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_text_2"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dialog_message_linearlayout_padding" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dialog_message_item_padding"
+                android:text="@string/dialog_message_label_phone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_text_1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_frame_1"
+                android:padding="@dimen/dialog_message_item_padding"
+                android:text="123456787"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_text_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dialog_message_item_padding"
+                android:text="@string/dialog_message_label_message_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_text_1"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/contentEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_frame_1"
+                android:padding="@dimen/dialog_message_item_padding"
+                android:hint="@string/dialog_message_hint_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_text_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dialog_message_btnbar_margin_up_down"
+                android:layout_marginTop="@dimen/dialog_message_btnbar_margin_up_down"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/sendBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/dialog_message_btn_margin_left_right"
+                    android:padding="@dimen/dialog_message_item_padding"
+                    android:background="@drawable/shape_frame_2"
+                    android:text="@string/dialog_message_btn_send"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_text_2"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dialog_message_btn_margin_left_right"
+                    android:padding="@dimen/dialog_message_item_padding"
+                    android:background="@drawable/shape_frame_2"
+                    android:text="@string/dialog_message_btn_cancel"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_text_2"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

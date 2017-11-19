@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher" >
+            </ImageView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_login_linearlayout_center_margin"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_login_tablerow_up_margin_bottom"
+                android:layout_marginTop="@dimen/activity_login_tablerow_up_margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/shape_login_tablerow" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_icon_user" />
+
+                <EditText
+                    android:id="@+id/userEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_login_edittext"
+                    android:hint="@string/activity_login_edittext_hint_user"
+                    android:paddingLeft="@dimen/activity_login_edittext_padding_left_right"
+                    android:paddingRight="@dimen/activity_login_edittext_padding_left_right"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_light"
+                    android:textColorHint="@color/color_text_1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_login_tablerow_down_margin_bottom"
+                android:layout_marginTop="@dimen/activity_login_tablerow_down_margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/shape_login_tablerow" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_icon_key" />
+
+                <EditText
+                    android:id="@+id/pwdEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_login_edittext"
+                    android:hint="@string/activity_login_edittext_hint_pwd"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/activity_login_edittext_padding_left_right"
+                    android:paddingRight="@dimen/activity_login_edittext_padding_left_right"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_light"
+                    android:textColorHint="@color/color_text_1" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageButton
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/activity_login_imagebutton_top_bottom"
+            android:layout_marginLeft="@dimen/activity_login_imageButton_left"
+            android:layout_marginTop="@dimen/activity_login_imagebutton_top_bottom"
+            android:layout_weight="7"
+            android:background="@drawable/shape_login_image_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/login_icon_login" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/activity_login_copyright"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_text_1"
+        android:textStyle="bold" />
+
+</LinearLayout>

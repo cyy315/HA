@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:padding="@dimen/activity_select_scroll_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_select_label_height"
+            android:gravity="center_vertical"
+            android:text="@string/activity_select_label_0"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_text_1"
+            android:textStyle="normal" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_select_spinner_edit_height"
+            android:background="@drawable/shape_frame_3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_select_spinner_padding_left_right"
+            android:paddingRight="@dimen/activity_select_spinner_padding_left_right"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_text_1"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_select_label_height"
+            android:gravity="center_vertical"
+            android:text="@string/activity_select_label_1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_text_1"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/activity_select_spinner_edit_height"
+            android:padding="@dimen/activity_select_edit_padding"
+            android:background="@drawable/shape_frame_2" 
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_text_1"
+            android:textStyle="normal"
+            android:inputType="none"/>
+        
+        <Button 
+            android:id="@+id/enter"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="@string/activity_select_enter_text"
+            android:layout_height="@dimen/activity_select_enter_btn_height"
+            android:layout_marginTop="@dimen/activity_select_enter_btn_margin_top"
+            android:background="@color/color_light"/>
+    </LinearLayout>
+
+</ScrollView>

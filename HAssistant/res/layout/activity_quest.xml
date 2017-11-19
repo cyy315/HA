@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background" >
+  
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="@dimen/activity_quest_radiogroup_padding_left_right"
+        android:paddingRight="@dimen/activity_quest_radiogroup_padding_left_right"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/chooseItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_quest_radiobutton_margin"
+            android:background="@drawable/selector_bar_item"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/activity_quest_radio_choose"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_text_2"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/answerItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_quest_radiobutton_margin"
+            android:background="@drawable/selector_bar_item"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/activity_quest_radio_answer"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_text_2"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/codingItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_quest_radiobutton_margin"
+            android:background="@drawable/selector_bar_item"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/activity_quest_radio_coding"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_text_2"
+            android:textStyle="bold" />
+    </RadioGroup>
+    
+     <android.support.v4.view.ViewPager
+         android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/radioGroup" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
